@@ -80,6 +80,17 @@ module.exports = app => {
 };
 ```
 
+此时目录结构如下：
+
+```bash
+egg-example
+├── app
+│   ├── controller
+│   │   └── home.js
+│   └── router.js
+└── package.json
+```
+
 好，现在可以启动应用来体验下
 
 ```bash
@@ -388,6 +399,42 @@ $ npm test
 ```
 
 就这么简单，更多请参见[单元测试](../core/unittest.md)。
+
+### 完整的目录结构
+
+```bash
+├── app
+│   ├── controller
+│   │   ├── home.js
+│   │   └── news.js
+│   ├── service
+│   │   └── news.js
+│   ├── extend
+│   │   └── helper.js
+│   ├── middleware
+│   │   └── robot.js
+│   ├── public
+│   │   ├── css
+│   │   │   └── news.js
+│   │   └── js
+│   │       └── news.js
+│   └── view
+│       └── news
+│           └── list.tpl
+├── config
+│   ├── config.default.js
+│   ├── config.local.js
+│   └── plugin.js
+├── test
+│   └── app
+│       ├── controller
+│       │   └── news.test.js
+│       └── middleware
+│           └── robot.test.js
+└── package.json
+```
+
+完整的目录结构规范参见[目录结构](../basics/structure.md)。
 
 ## 后记
 

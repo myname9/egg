@@ -89,6 +89,18 @@ module.exports = app => {
 };
 ```
 
+So our project directory is：
+
+```bash
+egg-example
+├── app
+│   ├── controller
+│   │   └── home.js
+│   └── router.js
+└── package.json
+```
+
+
 Now you can start up the Web Server and see your application in action.
 
 ```bash
@@ -418,6 +430,42 @@ $ npm test
 ```
 
 That is all of it, for more detail, see [Unit Testing](../core/unittest.md).
+
+### Directory structure
+
+```bash
+├── app
+│   ├── controller
+│   │   ├── home.js
+│   │   └── news.js
+│   ├── service
+│   │   └── news.js
+│   ├── extend
+│   │   └── helper.js
+│   ├── middleware
+│   │   └── robot.js
+│   ├── public
+│   │   ├── css
+│   │   │   └── news.js
+│   │   └── js
+│   │       └── news.js
+│   └── view
+│       └── news
+│           └── list.tpl
+├── config
+│   ├── config.default.js
+│   ├── config.local.js
+│   └── plugin.js
+├── test
+│   └── app
+│       ├── controller
+│       │   └── news.test.js
+│       └── middleware
+│           └── robot.test.js
+└── package.json
+```
+
+see [Directory Structure](../basics/structure.md) for more info。
 
 ## Conclusions
 
